@@ -23,7 +23,7 @@ let foo_null: null = null;
 let foo_undefined: undefined = undefined;
 
 // function
-function add(nbr1: number, nbr2: number): number{
+function addi(nbr1: number, nbr2: number): number{
     return 5;   
 }
 function _void(): void{
@@ -33,3 +33,8 @@ function _void(): void{
 function _never(error: any): never{
     throw new Error(error);
 }
+
+// inférence : typescript va déduire que c'est de type string si on reaffecte la variable. 
+let myvar =  'Hello'
+myvar =  'world !!'; // string
+const nbr: number = (myvar as string).length
