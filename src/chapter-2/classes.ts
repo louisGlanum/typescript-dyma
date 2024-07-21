@@ -51,11 +51,11 @@ class Voiture extends Vehicule{
         this.detectMarque(this.marque)
         console.log(this.airbag)
     }
-
+ 
     stop() {
         console.log('car stop')
     }
-
+ 
     constructor() {
         super('renault','red', true); // pour invoquer le constructor de la class parente
         this.speed = 30;
